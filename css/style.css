@@ -16,7 +16,17 @@ header{
     width:100%;
     /* DEBUG:  */
     height: 100px;
-    background-color: red;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#name{
+    font-size: calc(30px + .5vw);
+    font-family: 'Fredoka One', cursive;
+    line-height: 100px;
+    float: left;
+    padding-left: calc(10px + 1vw);
 }
 
 
