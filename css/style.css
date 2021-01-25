@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* header */
+header{
+    width:100%;
+    /* DEBUG:  */
+    height: 100px;
+    background-color: red;
+}
+
+
+
+/* main */
+.side-arrow{
+    float: left;
+    width: 5vw;
+    /* DEBUG:  */
+    height: calc(100vh - 200px);
+    background-color: blue;
+}
+
+.content{
+    float: left;
+    width: 90vw;
+    /* DEBUG:  */
+    height: calc(100vh - 200px);
+    background-color: green;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    /* DEBUG:  */
+    height: 100px;
+    background-color: red;
+}
