@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-shadow: 2px 2px 5px black;
 }
 
 .row::after{
@@ -11,7 +12,8 @@
 }
 
 body{
-    background-image: url(https://www.latinaquotidiano.it/wp-content/uploads/2018/11/pioggia-2.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://wallpaperaccess.com/full/1209558.jpg);
+    background-size: cover;
 }
 
 a{
@@ -55,11 +57,10 @@ header.row > div{
 }
 
 /* setto icona menù hamburger */
-.hamburger span::before{
+.hamburger a::before{
     line-height: 100px;
     content: "\f0c9";
     font-family: Fontawesome;
-    color: white;
     background-color: rgba(0,0,0,.50);
     border-radius: 50%;
     padding: 15px 17px;
@@ -71,21 +72,28 @@ header.row > div{
 .side-arrow{
     float: left;
     width: 5%;
-    /* DEBUG:  */
     height: calc(100vh - 200px);
-    background-color: blue;
+    text-align: center;
+    font-family: Fontawesome;
+    color: white;
+    font-size: calc(3em + 1vw);
+    line-height: calc(100vh - 200px);
 }
+
+.side-arrow .left::before{
+    content: "\f053";
+}
+
+.side-arrow .right::before{
+    content: "\f054";
+}
+
 
 .content{
     float: left;
     width: 90%;
-    /* DEBUG:  */
     height: calc(100vh - 200px);
-    background-color: green;
 }
-
-
-
 
 
 
