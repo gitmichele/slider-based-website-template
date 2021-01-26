@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.row{
+.row::after{
     content: "";
     display: table;
     clear: both;
@@ -12,21 +12,13 @@
 
 
 /* header */
-header{
-    width:100%;
+header.row > div{
+    float: left;
+    width: calc(100% / 3);
     /* DEBUG:  */
     height: 100px;
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#name{
-    font-size: calc(30px + .5vw);
-    font-family: 'Fredoka One', cursive;
-    line-height: 100px;
-    float: left;
-    padding-left: calc(10px + 1vw);
+    background-color: red;
+    border: 1px solid black;
 }
 
 
@@ -34,7 +26,7 @@ header{
 /* main */
 .side-arrow{
     float: left;
-    width: 5vw;
+    width: 5%;
     /* DEBUG:  */
     height: calc(100vh - 200px);
     background-color: blue;
@@ -42,7 +34,7 @@ header{
 
 .content{
     float: left;
-    width: 90vw;
+    width: 90%;
     /* DEBUG:  */
     height: calc(100vh - 200px);
     background-color: green;
