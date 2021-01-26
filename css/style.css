@@ -85,10 +85,18 @@ header.row > div{
 }
 
 
+
+
+
+
 /* footer */
 footer{
-    width: 100%;
-    /* DEBUG:  */
-    height: 100px;
-    background-color: red;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+footer span{
+    font-family: 'Fredoka One', cursive;
+    font-size: calc(1em + .1vw);
 }
