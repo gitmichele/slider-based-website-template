@@ -10,18 +10,62 @@
     clear: both;
 }
 
+body{
+    background-image: url(https://www.latinaquotidiano.it/wp-content/uploads/2018/11/pioggia-2.jpg);
+}
 
-/* header */
-header.row > div{
-    float: left;
-    width: calc(100% / 3);
-    /* DEBUG:  */
-    height: 100px;
-    background-color: red;
-    border: 1px solid black;
+a{
+    text-decoration: none;
+    color: white;
 }
 
 
+/* header */
+/* divido l'header in colonne */
+header.row > div{
+    float: left;
+    width: calc(100% / 3);
+    height: 100px;
+}
+
+/* logo della pagina */
+.logo a{
+    font-family: 'Fredoka One', cursive;
+    font-size: calc(1em + 1vw);
+    line-height: 100px;
+    margin-left: calc(10px + 2vw);
+}
+
+/* colonna barra di navigazione */
+.navbar{
+    text-align: center;
+}
+
+/* elementi della barra di navigazzione */
+.navbar li{
+    line-height: 100px;
+    padding: 0 calc(5px + .5vw);
+    display: inline-block;
+    font-family: 'Della Respira', serif;
+}
+
+/* colonna hamburger menù */
+.hamburger{
+    text-align: right;
+}
+
+/* setto icona menù hamburger */
+.hamburger span::before{
+    line-height: 100px;
+    content: "\f0c9";
+    font-family: Fontawesome;
+    color: white;
+    background-color: rgba(0,0,0,.50);
+    border-radius: 50%;
+    padding: 15px 17px;
+    font-size: calc(1em + .5vw);
+    margin-right: calc(10px + 2vw);
+}
 
 /* main */
 .side-arrow{
